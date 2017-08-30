@@ -29,7 +29,7 @@ if ( !function_exists('format_date') ) {
 }
 
 if ( !function_exists('selected') ) {
-    function selected($param1, $param2) {
+    function selected_dev1($param1, $param2) {
         return $param1 != $param2 ? : 'selected';
     }
 }
