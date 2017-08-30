@@ -1,7 +1,7 @@
 <?php
 
-if (!function_exists('has_error')) {
-	function has_error($errors, $field) {
+if (!function_exists('has_error_html')) {
+	function has_error_html($errors, $field) {
 		return $errors->has($field) ? 'has-error' : '';
 	}
 }
