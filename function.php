@@ -7,7 +7,7 @@ if (!function_exists('has_error_bootstrap')) {
 }
 
 if ( !function_exists('active_menu') ) {
-	function active_menu($link) {
+	function active_menu_dev1($link) {
         if (strpos($link, '.') !== false) {
             return Route::currentRouteName() == $link ? 'active' : '';
         }
@@ -23,13 +23,13 @@ if ( !function_exists('active_menu') ) {
 
 
 if ( !function_exists('format_date') ) {
-    function format_date($date, $format = 'd/m/Y') {
+    function format_date_dev1($date, $format = 'd/m/Y') {
         return date($format, strtotime($date));
     }
 }
 
 if ( !function_exists('selected') ) {
-    function selected($param1, $param2) {
+    function selected_dev1($param1, $param2) {
         return $param1 != $param2 ? : 'selected';
     }
 }
