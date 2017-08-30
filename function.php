@@ -7,7 +7,7 @@ if (!function_exists('has_error_html')) {
 }
 
 if ( !function_exists('active_menu') ) {
-	function active_menu($link) {
+	function active_menu_dev($link) {
         if (strpos($link, '.') !== false) {
             return Route::currentRouteName() == $link ? 'active' : '';
         }
@@ -23,7 +23,7 @@ if ( !function_exists('active_menu') ) {
 
 
 if ( !function_exists('format_date') ) {
-    function format_date($date, $format = 'd/m/Y') {
+    function format_date_dev($date, $format = 'd/m/Y') {
         return date($format, strtotime($date));
     }
 }
