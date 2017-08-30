@@ -1,5 +1,11 @@
 <?php
 
+if (!function_exists('has_error_bootstrap1')) {
+    function has_error_bootstrap1($errors, $field) {
+        return $errors->has($field) ? 'has-error' : '';
+    }
+}
+
 if (!function_exists('has_error_bootstrap')) {
 	function has_error_bootstrap($errors, $field) {
 		return $errors->has($field) ? 'has-error' : '';
